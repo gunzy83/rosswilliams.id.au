@@ -1,0 +1,15 @@
+// ==============================
+// Custom style
+// 自定义样式
+// ==============================
+
+.home {
+  .home-profile {
+     .home-avatar {
+      img {
+        width: 13rem;
+        @include box-shadow(0 0 0 0em rgba(0, 0, 0, 0.05));
+      }
+    }
+  }
+}
