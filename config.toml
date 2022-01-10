@@ -37,7 +37,7 @@ theme = "CodeIT"
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
-    svgFavicon = "favicon.svg"
+    svgFavicon = "/favicon.svg"
     # Android browser theme color
     themeColor = "#1f2937"
     # Safari mask icon color
@@ -80,7 +80,7 @@ theme = "CodeIT"
       # title name
       name = ""
       # you can add extra information before the name (HTML format is supported), such as icons
-      pre = '<span style="color: #60A5FA"><i class="fas fa-cloud fa-fw"></i></span>'
+      pre = '<i class="fas fa-cloud fa-fw"></i>'
       # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
       # LoveIt NEW | 0.2.5 whether to use typeit animation for title name
@@ -444,10 +444,10 @@ theme = "CodeIT"
 
   # LoveIt NEW | 0.2.7 Cookie consent config
   [params.cookieconsent]
-    enable = false
+    enable = true
     # text strings used for Cookie consent banner
     [params.cookieconsent.content]
-      message = ""
+      message = "This website uses Cookies to save your theme selection. Yep, that's it."
       dismiss = ""
       link = ""
 

@@ -1,7 +1,13 @@
 {{- if .Content -}}
-    <script type="text/javascript" nonce="a77e4c11a57f1d757fca5754a8f83b5d4ece49a2d28596889127c1a2f3f28832" >
-        {{- .Content | safeJS -}}
-    </script>
+    {{- $targetPath := .Path -}}
+    {{- $resource := .Content | resources.FromString $targetPath -}}
+    {{- with .Scratch.Get "fingerprint" -}}
+        {{- $resource := $resource | fingerprint .Site.Params.fingerprint -}}
+    {{- end -}}
+    {{- $integrity := $resource.Data.Integrity -}}
+    {{- $src := $resource.RelPermalink -}}
+    <script type="text/javascript" src="{{ $src }}"{{ if .Crossorigin }} crossorigin="anonymous"{{ end }}{{ with $integrity }} integrity="{{ . }}"{{ end }}{{ if .Async }} async{{ end }}{{ if .Defer }} defer{{ end }}{{ with .Attr }} {{ . | safeHTMLAttr }}{{ end }}></script>
+
 {{- else if strings.HasPrefix .Source "<script" -}}
     {{- safeHTML .Source -}}
 {{- else -}}

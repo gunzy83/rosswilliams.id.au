@@ -13,3 +13,40 @@
     }
   }
 }
+
+.header-title {
+  color: #F87171;
+}
+
+.header-title-pre {
+  color: #60A5FA;
+}
+
+.cc-window.cc-banner, .cc-window.cc-floating {
+  color: #1F2937;
+  background-color: #60A5FA;
+  .cc-link {
+    &:hover,
+    &:focus {
+      color: #DC2626;
+    }
+  }
+  .cc-btn {
+    color: #1F2937;
+
+    &:hover,
+    &:focus {
+      background-color: #93C5FD;
+    }
+
+    [theme="dark"] & {
+      color: #1F2937;
+
+      &:hover,
+      &:focus {
+        background-color: #93C5FD;
+      }
+    }
+  }
+}
+

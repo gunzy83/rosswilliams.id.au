@@ -23,7 +23,7 @@
         {{- $targetPath := "js/theme-select.js" -}}
         {{- $themeSelect := $themeSelectScript | resources.FromString $targetPath -}}
         {{- with .Scratch.Get "fingerprint" -}}
-            {{- $themeSelect := $themeSelect | fingerprint .Site.Params.fingerprint -}}
+            {{- $themeSelect := $themeSelect | fingerprint . -}}
         {{- end -}}
         {{- $integrity := $themeSelect.Data.Integrity -}}
         <script type="text/javascript" src="{{ $themeSelect.RelPermalink }}" {{ with $integrity }} integrity="{{ . }}"{{ end }}></script>
