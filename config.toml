@@ -137,8 +137,7 @@ theme = "LoveIt"
       title = "Ross Williams"
       # subtitle shown in home page
       #subtitle = "Cloud | Engineering | DevOps | Security"
-      subtitle = "Engineering Leader | AWS | DevOps | SRE<br>Linux | Security"
-      #"Computer Systems Engineer"
+      subtitle = "Engineering Leader | AWS | DevOps | SRE | Linux | Security"
       # whether to use typeit animation for subtitle
       typeit = false
       # whether to show social links
