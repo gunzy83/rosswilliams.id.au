@@ -9,7 +9,7 @@ title = "Ross Williams' Profile Page"
 disableKinds = ["taxonomy", "term"]
 
 # Change the default theme to be use when building the site with Hugo
-theme = "CodeIT"
+theme = "LoveIt"
 
 [params]
   # LoveIt theme version
