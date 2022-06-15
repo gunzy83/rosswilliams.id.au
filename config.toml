@@ -550,6 +550,15 @@ theme = "LoveIt"
     name = "About Me"
     url = "/about/"
     title = ""
+    weight = 2
+
+  [[menu.main]]
+    identifier = "blog"
+    pre = ""
+    post = ""
+    name = "My Blog"
+    url = "https://recursive.cloud"
+    title = ""
     weight = 1
 
 [deployment]
