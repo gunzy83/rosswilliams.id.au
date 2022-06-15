@@ -36,5 +36,5 @@ jobs:
         run: hugo --minify
 
       - name: Deploy
-        #if: ${{ github.ref == 'refs/heads/master' }}
+        if: ${{ github.ref == 'refs/heads/master' }}
         run: hugo deploy
