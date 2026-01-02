@@ -1,0 +1,12 @@
+baseURL = "https://rosswilliams.id.au/"
+languageCode = "en-au"
+title = "Ross Williams' Profile Page"
+theme = "LucentLink-Hugo"
+minVersion = "0.115.0"
+
+[params]
+  description     = "Ross Williams' Profile Page"
+  googleAnalytics = ""    # your GA ID, if any
+
+[outputs]
+  home = ["HTML"]

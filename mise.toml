@@ -1,0 +1,14 @@
+[tools]
+hugo-extended = "0.152.2"
+
+[tasks.serve]
+description = "Serve the Hugo site with drafts included"
+run = "hugo server -D"
+
+[tasks.build]
+description = "Build the Hugo site"
+run = "hugo --minify"
+
+[tasks.clean]
+description = "Clean the public directory"
+run = "rm -rf public"
