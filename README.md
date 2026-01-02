@@ -1,7 +1,7 @@
 rosswilliams.id.au
 ==================
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT) [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fgunzy83%2Frosswilliams.id.au%2Fbadge&style=flat-square)](https://actions-badge.atrox.dev/gunzy83/rosswilliams.id.au/goto)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT) [![Netlify Status](https://api.netlify.com/api/v1/badges/f720d8ab-4413-4ef2-8f34-1339d5f8f044/deploy-status)](https://app.netlify.com/projects/stately-shortbread-49c10d/deploys)
 
 Source files for my personal landing page.
 
