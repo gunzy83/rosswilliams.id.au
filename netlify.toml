@@ -4,3 +4,22 @@
 
 [build.environment]
   HUGO_VERSION = "0.145.0"
+
+[[headers]]
+  # Headers for entire site
+  for = "/*"
+  [headers.values]
+    # Content Security Policy (CSP) definition
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self'; object-src 'none'; base-uri 'self'; connect-src 'self'; font-src 'self'; frame-src 'self'; img-src 'self'; manifest-src 'self'; media-src 'self';"
+    # Strict Transport Security (HSTS)
+    Strict-Transport-Security = "max-age=63072000; includeSubdomains"
+    # X-Content-Type-Options
+    X-Content-Type-Options = "nosniff"
+    # X-Frame-Options
+    X-Frame-Options = "DENY"
+    # X-XSS-Protection
+    X-XSS-Protection = "1; mode=block"
+    # Referrer-Policy
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Permissions-Policy
+    Permissions-Policy = "interest-cohort=()"
