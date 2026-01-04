@@ -19,9 +19,7 @@
         {{- $themeSelectScript := (printf "('%v' === 'true' && window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('%v' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '%v' === 'dark')) && document.body.setAttribute('theme', 'dark');" ($cookieConsentEnabled) ($theme) ($theme)) -}}
         {{- $targetPath := "js/theme-select.js" -}}
         {{- $themeSelect := $themeSelectScript | resources.FromString $targetPath -}}
-        {{- with .Scratch.Get "fingerprint" -}}
-        {{- $themeSelect := $themeSelect | fingerprint . -}}
-        {{- end -}}
+        {{- $themeSelect := $themeSelect | fingerprint -}}
         {{- $integrity := $themeSelect.Data.Integrity -}}
         <script type="text/javascript" src="{{ $themeSelect.RelPermalink }}" {{ with $integrity }} integrity="{{ . }}" {{ end }}></script>
 
