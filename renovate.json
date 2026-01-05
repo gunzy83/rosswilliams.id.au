@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "git-submodules": {
+    "enabled": true
+  },
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "^netlify.toml$"
+      ],
+      "matchStrings": [
+        "HUGO_VERSION\\s*=\\s*\"(?<currentValue>[0-9.]+)\""
+      ],
+      "depNameTemplate": "hugo-extended",
+      "datasourceTemplate": "github-releases",
+      "packageNameTemplate": "gohugoio/hugo",
+      "versioningTemplate": "semver"
+    }
+  ]
+}

@@ -4,11 +4,19 @@ hugo-extended = "0.145.0"
 [tasks.serve]
 description = "Serve the Hugo site with drafts included"
 run = "hugo server -D"
+depends = ["update-submodule"]
 
 [tasks.build]
 description = "Build the Hugo site"
 run = "hugo"
+depends = ["update-submodule"]
 
 [tasks.clean]
 description = "Clean the public directory"
 run = "rm -rf public"
+
+[tasks.update-submodule]
+description = "Update git submodules"
+run = "git submodule update --init --recursive"
+sources = ['.gitmodules']
+hide = true
