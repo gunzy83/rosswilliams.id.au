@@ -1,28 +1,65 @@
-rosswilliams.id.au
-==================
+# rosswilliams.id.au
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT) [![Netlify Status](https://api.netlify.com/api/v1/badges/f720d8ab-4413-4ef2-8f34-1339d5f8f044/deploy-status)](https://app.netlify.com/projects/rosswilliams-id-au/deploys)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT) [![Netlify Status](https://img.shields.io/netlify/f720d8ab-4413-4ef2-8f34-1339d5f8f044?style=for-the-badge&logo=netlify)](https://app.netlify.com/projects/rosswilliams-id-au/deploys)
 
 Source files for my personal landing page.
 
-Requirements
-------------
+## Requirements
 
-To create and serve posts locally, only `docker-compose` is required.
+This project uses [mise](https://mise.jdx.dev/) for tool and task management. You will need to have mise installed to ensure the correct Hugo version and to use the provided tasks.
 
-To test the Github workflow, install `act` (see [nektos/act](https://github.com/nektos/act) for install instructions).
+Install mise (if not already):
 
-Usage
------
+```sh
+brew install mise
+```
 
-The `Makefile` is set up with a few commands to support authoring and publishing testing. It is written to be self documenting, run `make` to see the help.
+or
 
-License
--------
+```sh
+curl https://mise.run | bash
+```
 
-MIT License
+Then install the required tools:
 
-Author Information
-------------------
+```sh
+mise install
+```
+
+This will install the correct version of Hugo (hugo-extended 0.145.0).
+
+## Usage
+
+Common development tasks are defined in `mise.toml` and can be run with:
+
+```sh
+mise run <task>
+# or
+mise <task>
+```
+
+Available tasks:
+
+- `serve` — Serve the Hugo site locally with drafts included
+- `build` — Build the Hugo site for production
+- `clean` — Remove the generated `public` directory
+
+For example, to serve the site locally:
+
+```sh
+mise serve
+```
+
+## Netlify Configuration
+
+The `netlify.toml` file configures how Netlify builds and deploys the site. It specifies the build command, publish directory, and environment variables (such as the Hugo version). It also sets HTTP headers for security and performance, including a strict Content Security Policy and other best-practice headers.
+
+## License
+
+Code is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+Content is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+## Author Information
 
 Created and curated from 2021 onwards by [Ross Williams](http://rosswilliams.id.au/).
