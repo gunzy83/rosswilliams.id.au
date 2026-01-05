@@ -6,10 +6,11 @@
   "git-submodules": {
     "enabled": true
   },
-  "regexManagers": [
+  "customManagers": [
     {
-      "fileMatch": [
-        "^netlify.toml$"
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^netlify.toml$/"
       ],
       "matchStrings": [
         "HUGO_VERSION\\s*=\\s*\"(?<currentValue>[0-9.]+)\""
