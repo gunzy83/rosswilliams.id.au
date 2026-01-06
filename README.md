@@ -1,8 +1,12 @@
+<div align="center">
+
 # rosswilliams.id.au
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT) [![Netlify Status](https://img.shields.io/netlify/f720d8ab-4413-4ef2-8f34-1339d5f8f044?style=for-the-badge&logo=netlify)](https://app.netlify.com/projects/rosswilliams-id-au/deploys)
+[![Hugo](https://img.shields.io/badge/Built%20with-Hugo-blue.svg?style=for-the-badge&logo=hugo)](https://gohugo.io/) [![Netlify Status](https://img.shields.io/netlify/f720d8ab-4413-4ef2-8f34-1339d5f8f044?style=for-the-badge&logo=netlify)](https://app.netlify.com/projects/rosswilliams-id-au/deploys) [![Renovate Bot](https://img.shields.io/badge/renovate-enabled-brightgreen?style=for-the-badge&logo=renovate&logoColor=fff)](https://github.com/renovatebot/renovate)
 
 Source files for my personal landing page.
+
+</div>
 
 ## Requirements
 
