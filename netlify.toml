@@ -4,7 +4,7 @@
   ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF . ':(exclude)renovate.json' ':(exclude)README.md' ':(exclude)mise.toml' ':(exclude).prettierignore' ':(exclude).gitignore'"
 
 [build.environment]
-  HUGO_VERSION = "0.145.0"
+  HUGO_VERSION = "0.154.5"
 
 [[headers]]
   # Headers for entire site
